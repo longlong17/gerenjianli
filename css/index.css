@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  /* 设置所有的超链接去掉下划线 */
+  text-decoration: none;
+  /* 超链接的颜色继承父元素 */
+  color: initial;
+}
+.container {
+  width: 800px;
+  margin: 50px auto;
+  border-radius: 15px;
+  box-shadow: 0 0 5px #000;
+  padding: 40px 50px;
+  position: relative;
+  background: #fff;
+}
+.container::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2023px;
+    background: rgb(16, 170, 233);
+    position: absolute;
+    z-index: -1;
+    top:0;
+    left: -10px;
+    border-radius: 15px;
+    box-shadow: 0 0 3px rgb(16, 170, 233);
+    transform: rotate(-5deg);
+    /* transform: ; */
+}
+.header {
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 100px;
+  position: relative;
+}
+.container .name {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+.container .name span {
+  display: inline-block;
+  font-size: 14px;
+  margin-left: 10px;
+}
+.container-attribute {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: repeat(2, 400px);
+  grid-template-rows: repeat(3, 40px);
+  color: rgb(179, 182, 186);
+}
+.container-attribute a {
+  color: rgb(67, 186, 240);
+  margin-left: 5px;
+}
+.container-attribute .container-attribute-introduce span {
+  display: inline-block;
+  color: rgb(56, 61, 66);
+  transform: translateX(10px);
+  /* font-weight: normal; */
+}
+.experience {
+  transform: translateX(-25px);
+}
+.container-attribute-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* 教育经历板块样式 */
+.educational {
+  position: relative;
+  padding-bottom: 130px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.educational h1 {
+  transform: translateY(-40px);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.education-item {
+  margin-top: 20px;
+  color: rgb(136, 136, 136);
+}
+.education-item span {
+  color: rgb(51, 51, 51);
+  display: inline-block;
+  margin: 0 4px 0 4px;
+  font-weight: 600;
+}
+.education-item::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgb(14, 165, 233);
+  margin-right: 13px;
+  vertical-align: -2px;
+  z-index: 10px;
+}
+.education::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  width: 3px;
+  height: 150px;
+  background-color: rgb(14, 165, 233);
+  z-index: 0;
+}
+/* 专业技能板块 */
+.area{
+  padding-bottom: 90px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+}
+.area h1 {
+  transform: translateY(-40px);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.area-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px 0;
+}
+.area-container-item {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 110px;
+  background: rgb(240, 253, 255);
+  border: 5px solid rgb(195, 241, 248);
+}
+.levl::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: transparent;
+    transform: translate(-6px,-115px) rotate(45deg);
+    border:5px solid;
+
+}
+.levl1::after{
+  border-color:rgb(14, 165, 233) rgb(14, 165, 233) rgb(14, 165, 233) transparent ;
+}
+.levl2::after{
+  border-color:rgb(14, 165, 233) ;
+}
+.levl3::after{
+  border-color:rgb(14, 165, 233) ;
+}
+.levl4::after{
+  border-color: rgb(14, 165, 233) transparent transparent transparent ;
+}
+.levl5::after{
+  border-color:rgb(14, 165, 233);
+}
+.levl6::after{
+  border-color:rgb(14, 165, 233)  ;
+}
+/* 项目经验板块 */
+.experiences{
+  margin-left: 28px;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  padding-bottom: 60px;
+}
+.experiences h1{
+  transform: translateY(-40px);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+.experience-introduce{
+  font-size: 14px;
+ margin-bottom: 80px;
+}
+.introduce-address{
+  color: rgb(155, 162, 181);
+  line-height: 30px;
+}
+.introduce-address a{
+  margin-left: 6px;
+  color:rgb(70, 170, 234)
+}
+.introduce-time{
+  font-size: 18px;
+  margin: 10px 0 10px 0;
+  font-weight: normal;
+
+}
+.introduce-opler{
+  color: rgb(55, 55, 55);
+  line-height: 30px;
+}
+.address-openl{
+  margin-left: 13px;
+}
+.opler-grey{
+  color: rgb(155, 162, 181);
+  margin-right: 10px;
+  display: inline-block;
+}
+.opler-h{
+  margin: 15px 0 15px 66px;
+}
+.grey-item1{
+  font-weight: 600;
+}
+.tail{
+  padding-bottom: 30px;
+  margin-left: 28px;
+}
+.tail h1{
+  transform: translateY(-40px);
+  font-size: 20px;
+  letter-spacing: 2px;
+}
